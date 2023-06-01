@@ -10,10 +10,10 @@ let idCounter = 1001
 
 
 app.post('/games', function(req, res){
-  let t = req.body.title
-  let n = req.body.notes
-  let c = req.body.completed
-  let r = req.body.rating
+  let t = req.body.title //title of the game
+  let n = req.body.notes //description of the game
+  let c = req.body.completed //determines if the game has been completed or not
+  let r = req.body.rating //rating of the game from 1 = 10
 
   let newGame = {
     title: t,
